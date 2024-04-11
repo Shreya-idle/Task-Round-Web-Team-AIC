@@ -1,0 +1,179 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url();
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.events {
+    border-radius: 5%;
+    border: 2mm ridge rgba(211, 220, 50, .6);
+    background-color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.image_overlay:hover {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    font-size: 3rem;
+}
+
+.firstSection {
+    display: flex;
+
+    justify-content: space-around;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.firstSection>div {
+    width: 50%;
+}
+
+.rightSection {
+    float: right;
+    width: 200vw;
+    height: 266vh;
+}
+
+.rightSection img {
+    height: 924px;
+    width: 652px;
+}
+
+.header {
+    position: fixed ! important;
+    width: 100%;
+    max-height: 80px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.purple {
+    color: purple;
+}
+
+.scroll {
+    white-space: nowrap;
+    background-color: whitesmoke;
+    animation: slide 25s linear infinite;
+    animation-name: animation;
+
+}
+
+@keyframes animation {
+
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#nav-right {
+    float: right;
+    display: flex;
+    width: 100%;
+    margin-left: 2%;
+    padding: 0%;
+}
+
+.nav-content {
+    float: right;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: fixed! important;
+    right: 15px;
+    bottom: 100px;
+    max-width: 20px;
+    border-radius: 50%;
+}
+
+.links img {
+    max-width: 35px;
+    border-radius: 50%;
+}
+
+.links img {}
+
+.content-card-img {
+    float: left;
+    width: 20%;
+    height: 20%;
+
+}
+
+#github:hover {
+    text-decoration: underline;
+    color: azure;
+}
+
+.card-sum {
+    margin-left: 5%;
+}
+
+.card-sum h6 {
+    font-size: 1.2rem;
+    font-weight: 450;
+    letter-spacing: normal;
+    color: rgb(19, 6, 43);
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-part {
+    display: inline-flex;
+    justify-content: space-evenly;
+    box-shadow: 3px 0 3px 0 rgba(129, 125, 125, 0.436);
+    background-color: rgb(33, 1, 1);
+    width: 100%;
+    color: rgb(196, 191, 191);
+
+}
+
+.footer-part p {
+    margin: 0%;
+    padding: 0%;
+}
+
+#navbarSupportedContent {
+    float: right;
+    /* display: flex; */
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-end {
+    background-color: black;
+    color: whitesmoke;
+    box-shadow: 3px 0 0 0 rgba(44, 42, 42, 0.112);
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.footer-end p {
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}

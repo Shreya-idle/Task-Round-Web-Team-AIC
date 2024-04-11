@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omdena</title>
+  <link rel="stylesheet" href="">
+  <style>
+    html,
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-image: url(), linear-gradient(#080121, #120239, #260656, #4A1985, #a580ca);
+      color: #080121, #120239, #260656, #4A1985, #a580ca;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+
+    /* .image_overlay:hover {
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, .5);
+      display: flex;
+      justify-content: center;
+      color: whitesmoke;
+      letter-spacing: 5px;
+      font-size: 3rem;
+    } */
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+      align-items: center;
+    }
+
+    .firstSection>div {
+      width: 50%;
+    }
+
+    .rightSection {
+      float: right;
+      width: 200vw;
+      height: 266vh;
+    }
+
+    .rightSection img {
+      height: 924px;
+      width: 652px;
+    }
+
+
+
+
+
+    .scroll {
+      /* background-color: whitesmoke; */
+      overflow: hidden;
+      position: fixed !important;
+      /* display: flex; */
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 28.5px;
+      color: white;
+      z-index: 2;
+      margin: 0%;
+    }
+
+    .scroll p {
+      white-space: nowrap;
+      animation: slide 25s linear infinite;
+      margin-top: 0;
+
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+
+    .nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem .5rem;
+
+      overflow: hidden;
+
+      position: relative;
+      top: 15px;
+      z-index: 1;
+      margin-top: 7.25px;
+
+
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 1rem;
+      justify-content: space-around;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      height: 60.5px;
+
+    }
+
+    .nav-item {
+      margin-bottom: 1rem;
+      text-decoration: none;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .nav-links {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .nav-item img {
+      height: 60.5px;
+      width: auto;
+    }
+
+    /* .nav-item a+a {
+      margin-left: 20px;
+      /* Adjust the space between links as needed */
+    */ .contact-link {
+      text-align: right;
+      /* Right-align the contact link */
+    }
+
+
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .navigation {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      position: fixed ! important;
+      right: 15px;
+      bottom: 100px;
+      max-width: 20px;
+      border-radius: 50%;
+    }
+
+    .links img {
+      max-width: 35px;
+      border-radius: 50%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 60px;
+      width: 100%;
+      background-color: rgb(7, 7, 105);
+
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+      color: rgb(107, 215, 240);
+      font-size: 1.0rem;
+    }
+
+    .content-card-img {
+      float: left;
+      width: 20%;
+      height: 20%;
+
+    }
+
+    .heading {
+      color: #4A1985, ;
+      font-weight: 500;
+      margin: 98px 5% 2%;
+      font-size: large;
+      position: relative;
+      top: 20%;
+    }
+
+    .heading h1 {
+      font-weight: bold;
+      animation: fadeIn 2s ease-in-out;
+      font-size: 2.2rem;
+      padding: 0px;
+      float: left;
+      /* margin-top: 10%; */
+      margin-bottom: 0%;
+      font-weight: 400;
+      margin-left: 10%;
+
+    }
+
+    .heading h6 {
+      font-weight: 600;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 3.25rem;
+      color: #1d0442;
+      animation: fadeIn 2s ease-in-out;
+      font-size: 1.2rem;
+      font-weight: 450;
+      letter-spacing: normal;
+      float: right;
+      margin-left: 30%;
+    }
+
+    .heading span {
+      color: #643c96;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (min-width: 811px) {
+      h1 {
+        font-size: 1.2rem;
+        margin-top: 02%;
+
+      }
+    }
+
+    #github:hover {
+      text-decoration: underline;
+      color: azure;
+    }
+
+    .card-sum {
+      margin-left: 5%;
+    }
+
+    .card-sum img {
+      width: 150px;
+      height: 150px;
+      margin-top: 7%;
+      margin-right: 4.5%;
+      float: left;
+    }
+
+    .head-start {
+      width: 300vw;
+      height: 290vh;
+      margin-top: 7%;
+      margin-left: 30%;
+      float: right;
+      z-index: 1;
+
+    }
+
+    .events {
+      margin: 10%;
+      padding: 10%;
+      font-size: 2rem;
+      margin-top: ;
+      border-radius: 7%;
+      background: conic-gradient(#080121, #120239, #2606, #4A1985, #a580ca);
+      opacity: .6;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      top: 50%;
+    }
+
+    events h1 p {
+      padding: 2px;
+      margin: 1%;
+    }
+
+    .footer {
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-part {
+      display: inline-flex;
+      justify-content: space-evenly;
+      box-shadow: 3px 0 3px 0 rgba(129, 125, 125, 0.436);
+      background-color: rgb(33, 1, 1);
+      width: 100%;
+      color: rgb(196, 191, 191);
+
+    }
+
+    .footer-part p {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    .footer-end {
+      background-color: black;
+      color: whitesmoke;
+      box-shadow: 3px 0 0 0 rgba(44, 42, 42, 0.112);
+      width: 100%;
+      margin: 0%;
+      padding: 0%;
+    }
+
+    .footer-end p {
+      margin: 0%;
+      padding: 0%;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <!-- scrolling-text -->
+    <div class="scroll">
+      <p>AI Club VIT Bhopal University: Recruitment in progress. Last Date of submission of tasks- 10|04|24 ,11:59 pm.
+        Results would be anounced soon.</p>
+    </div>
+
+    <header class="nav-header">
+      <nav class="navigation">
+
+        <ul class="nav-links">
+          <li class="nav-item">
+            <div class="logo-container">
+              <img class=" logo" src="club_logo - icon.png" alt="Club Logo">
+            </div>
+          </li>
+          <li class="nav-item"><a href="omdena_mainpage.html">Home</a></li>
+          <li class="nav-item"><a href="our_mission.html">Events</a></li>
+          <li class="nav-item contact-link"><a href="">Contact Us</a></li>
+          <li class="nav-item "><img src="vit_logo.jpeg"></li>
+        </ul>
+
+      </nav>
+    </header>
+
+  </div>
+  </div>
+  <!-- social circle -->
+  <div class="links">
+    <a href="https://github.com/Shreya-idle"><img src="github.jpg"></a>
+    <a href="www.linkedin.com/in/shreya-agrawal-810b16270"><img src="linkedin.png"></a>
+    <a href=""><img src="instagram.png"></a>
+    <a href=""><img src="discord.png"></a>
+  </div>
+  <!-- main -->
+  <div class="heading">
+    <div class="card-sum">
+      <img src="robot_removebg.png" alt="github">
+      <div>
+        <h1 class="firstSection">Contribute, Collaborate and Learn with AI</h1>
+        <h6 class="firstSection"><span>Looking for peers to collaborate ?</span>Automate Your Future with <span>AI Club
+            VIT Bhopal University!</span> Its mission is to empower students with knowledge and skills related to
+          artificial
+          intelligence.
+          <a class="btn btn-outline-success" type="button">Participate and Win!</a>
+          <script class="leftSection" src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+          <span class="purple" id="element"></span>
+        </h6>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- events -->
+  <div class="events">
+    <div class="firstSection">
+      <h2>Our Events</h2>
+      <P>Join our events to have hands on experience, win prizes, learn from mentors and explore the AI world !
+        &#128512;
+      </P>
+    </div>
+    <div class="rightSection">
+      <ul>
+        <di class="border">
+          <li><img src="conclave.jpg">
+            <div class="image_overlay"></div>
+          </li>
+          <div class="border"></div>
+          <li><img src="lasthunt.png">
+            <div class="image_overlay"></div>
+          </li>
+          <div class="border"></div>
+          <li><img src="AIpowerr.jpg">
+            <div class="image_overlay"></div>
+          </li>
+          <div class="border"></div>
+          <li><img src="cv.jpg">
+            <div class="image_overlay"></div>
+          </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <div class="footer">
+    <div class="footer-part">
+      <p>Privacy Policy</p>
+      <p>Terms and Conditions</p>
+      <a id="github" style="color: white;"
+        href="https://github.com/OmdenaAI/omdena-bhopal-water-quality-monitoring">Project-1</a>
+      <a id="github" style="color: white" ;
+        href="https://github.com/OmdenaAI/bhopal-mexico-ai-road-inspection">Project-2</a>
+    </div>
+    <div class="footer-end">
+      <hr style="color: white;">
+      <p><i class="fa-regular fa-copyright"></i> 2023 Omdena | All Rights Reserved</p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+      var typed = new Typed('#element', {
+        strings: ['Hackathon', 'Workshop', 'Project', 'Webinars', 'Sessions'],
+        typeSpeed: 30,
+      });
+    </script>
+</body>
+
+</html>
